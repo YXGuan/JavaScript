@@ -1,0 +1,41 @@
+<!doctype html>
+<!--somethings people learn javascript just for form validation
+
+-->
+<html>
+<head>
+</head>
+<body>
+<form name="YXs_form">
+	Username: <input type="text" name = "username" />
+	pssword: <input type="password" name="pword"/>
+	<input type="submit" value="submit" />
+</form>
+
+<script type = "text/javascript">
+	var x = document.forms[0].length// first form   access each form
+	var y = document.forms[0].elements[1].name//access each element
+	//the same as: var y = document.YXs_form.username.name
+	document.write(x);
+	document.write(y);
+</script>
+<br>
+<br>
+<br>
+<br><br><br>
+<!-- from tut40 -->
+<form name="YXsform">
+	<input type="checkbox" name="thebox" />
+	<input type="button" value="Press me!" onClick= "validator()" >
+</form>
+
+<script type = "text/javascript">
+function validator(){
+		if(document.YXsform.thebox.checked)
+			alert("Yes, it's checked");
+		else
+			alert("no not checked");
+	}
+</script>
+</body>
+</html>
